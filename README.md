@@ -71,9 +71,12 @@ Once both servers are running and Claude is configured:
 ## Project Structure
 
 ```text
+├── .gitignore               # Git ignore rules
 ├── schema.graphql           # GraphQL schema definition
 ├── index.js                 # GraphQL server implementation
 ├── supergraph.yaml         # Apollo Router configuration
+├── package.json             # Node.js dependencies and scripts
+├── start-poc.sh            # Startup script
 ├── .apollo/
 │   └── mcp.local.yaml      # MCP server configuration
 └── claude-mcp-config.json  # Claude Desktop integration config
