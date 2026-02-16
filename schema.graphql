@@ -1,0 +1,23 @@
+type Query {
+  astronautsCurrentlyInSpace: [Astronaut!]!
+  astronautById(id: ID!): Astronaut
+  spaceStations: [SpaceStation!]!
+}
+
+type Astronaut {
+  id: ID!
+  name: String!
+  nationality: String!
+  currentMission: String
+  spaceStation: SpaceStation
+  launchDate: String
+  daysInSpace: Int
+}
+
+type SpaceStation {
+  id: ID!
+  name: String!
+  altitude: Float!
+  crew: [Astronaut!]!
+  capacity: Int!
+}
