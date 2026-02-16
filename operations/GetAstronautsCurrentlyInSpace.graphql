@@ -1,0 +1,13 @@
+query GetAstronautsCurrentlyInSpace {
+  astronautsCurrentlyInSpace {
+    id
+    name
+    nationality
+    currentMission
+    daysInSpace
+    spaceStation {
+      name
+      altitude
+    }
+  }
+}

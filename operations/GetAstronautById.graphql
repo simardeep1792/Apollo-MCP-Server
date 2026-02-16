@@ -1,0 +1,14 @@
+query GetAstronautById($id: ID!) {
+  astronautById(id: $id) {
+    id
+    name
+    nationality
+    currentMission
+    daysInSpace
+    spaceStation {
+      name
+      altitude
+      capacity
+    }
+  }
+}

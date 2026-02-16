@@ -1,0 +1,13 @@
+query GetSpaceStations {
+  spaceStations {
+    id
+    name
+    altitude
+    capacity
+    crew {
+      id
+      name
+      nationality
+    }
+  }
+}
